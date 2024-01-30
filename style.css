@@ -1,0 +1,244 @@
+:root {
+    --primary-color: rgb(73, 73, 73);
+    --secondary-color: rgb(254, 187, 12);
+    --button-color: rgb(0, 122, 130);
+    --banner-bg: rgb(245, 245, 245);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: lato;
+    src: url(./fonts/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: BebasNeue;
+    src: url(./fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-muted {
+    color: rgb(155, 152, 152);
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+    height: 100%;
+}
+
+#navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    padding: 12px 0;
+
+}
+
+.navlinks ul li {
+    list-style: none;
+    padding: 15px 0;
+}
+
+.navlinks {
+    width: 32%;
+}
+
+.navlogo {
+    width: 151px;
+}
+
+.navlinks ul li a {
+    /* color: var(); */
+    text-decoration: none;
+    padding: 15px 15px;
+    font-size: 20px;
+    font-family: lato;
+}
+
+.navlinks ul li a:hover {
+    color: var(--secondary-color) !important;
+}
+
+#signup {
+    padding: 12px 20px;
+    color: #ffff;
+    background-color: var(--button-color);
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 25px;
+    margin-left: 50px;
+    font-family: lato;
+
+}
+
+#banner {
+    background-color: var(--banner-bg);
+    height: 720px;
+}
+
+.bannerConteiner {
+    position: relative;
+    top: 0;
+}
+
+.bannerText {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, 30%);
+    width: 40%;
+}
+
+.bannerPrimarytext {
+    padding: 12px 0;
+    font-size: 70px;
+    font-weight: 600;
+    font-family: BebasNeue;
+}
+
+.bannersecondaryText {
+    font-family: lato;
+    font-weight: 400;
+}
+
+.business {
+    font-family: lato;
+    position: absolute;
+    top: -20px;
+    left: 70px;
+    color: var(--button-color);
+}
+
+.line {
+    position: absolute;
+    top: -12px;
+    left: 0px;
+    width: 50px;
+    height: 4px;
+    background-color: var(--secondary-color);
+}
+
+.bannerImg {
+    width: 40%;
+    height: 90%;
+    position: absolute;
+    bottom: -115px;
+    right: 85px;
+}
+
+.bannerbuttons {
+
+    margin: 50px 0;
+}
+
+.bannerbutton {
+    padding: 12px 20px;
+    color: #ffff;
+    background-color: var(--button-color);
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 25px;
+    /* margin-left: 10px; */
+    margin: 50px 0;
+}
+
+.bannerbulletPoints ul {
+    margin: 12px 0;
+}
+
+.bannerbulletPoints ul li:first-child {
+    list-style: none;
+    margin-left: 0px;
+}
+
+.bannerlistItem {
+    font-family: lato;
+    font-size: 20px;
+    margin: 0 20px;
+    padding: 0 20px;
+}
+
+.bannerlistItem::marker {
+    color: var(--secondary-color);
+    font-size: 25px;
+
+}
+
+.aboutContenent {
+    position: relative;
+    top: -70px;
+    left: 0px;
+}
+
+.aboutcard {
+    padding: 20px;
+    margin: 0 12px;
+    width: 18%;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+.aboutcard h2 {
+    font-family: BebasNeue;
+    color: var(--button-color);
+    font-size: 35px;
+    font-weight: 300;
+
+}
+
+.aboutcard p {
+    font-family: lato;
+    padding-bottom: 20px;
+    border-bottom: 4px solid var(--secondary-color);
+
+}
+
+.aboutcard:hover {
+    background-color: var(--button-color);
+    color: var(--secondary-color);
+}
+
+.aboutcard:hover .aboutcardheading {
+    /* background-color: var(--button-color); */
+    /* background-color: var(--button-color); */
+    color: var(--secondary-color);
+}
+
+.aboutcard:hover .aboutcardpara {
+    /* background-color: var(--button-color); */
+    /* background-color: var(--button-color); */
+    color: #fff;
+}
