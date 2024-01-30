@@ -80,6 +80,11 @@ a {
     width: 151px;
 }
 
+.navbuttons {
+    width: 32%;
+
+}
+
 .navlinks ul li a {
     /* color: var(); */
     text-decoration: none;
@@ -103,6 +108,13 @@ a {
     font-family: lato;
 
 }
+
+/* #signup:hover {
+    border: 2px solid var(--button-color);
+    background-color: #fff;
+    color: var(--button-color);
+
+} */
 
 #banner {
     background-color: var(--banner-bg);
@@ -181,6 +193,7 @@ a {
 .bannerbulletPoints ul li:first-child {
     list-style: none;
     margin-left: 0px;
+    padding-left: 0;
 }
 
 .bannerlistItem {
